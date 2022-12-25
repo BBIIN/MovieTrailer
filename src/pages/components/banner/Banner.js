@@ -4,7 +4,7 @@ import MainImg from '../../../assets/img/flix-main.jpg'
 function HomeBanner() {
     return(
         <S.Wrapper>
-            <img src={MainImg} alt='image'/>
+            <img src={MainImg} alt='banner'/>
             <div></div>
             <S.Text>
                 LET'S WATCH MOVIE

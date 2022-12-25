@@ -7,7 +7,7 @@ import '../../styles/index.css'
 function MovieCard({movie}){
 
     // movie 값 받아와서 화면에 뿌려보기
-    console.log(movie)  // 설명에 적을 것 확인하기
+    // console.log(movie)  // 설명에 적을 것 확인하기
 
     const IMG_URL = useRef(process.env.REACT_APP_IMAGE_URL)
     const [movieOverView, setMovieOverView] = useState('')
@@ -19,13 +19,13 @@ function MovieCard({movie}){
         }else {
             setMovieOverView(movieOverView)
         }
-    }, [movieOverView])
+    }, [movie, movieOverView])
 
     return(
         <S.Wrapper>
             <div>
                 <S.Poster>
-                    <img src={movie.poster_path ? IMG_URL.current + movie.poster_path : ReplaceImage} alt='image'/>
+                    <img src={movie.poster_path ? IMG_URL.current + movie.poster_path : ReplaceImage} alt='movie'/>
                 </S.Poster>
                 <S.DescBox>
                     <h1>{movie.title}</h1>
