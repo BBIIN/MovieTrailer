@@ -1,8 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Axios from './apis/@core';
 import LayoutHeader from './components/layout/header/Header';
-import MovieList from './pages/components/MovieList/MovieList';
 import HomePage from './pages/Home';
 import GlobalStyles from './styles/global';
 import { theme } from './styles/theme';

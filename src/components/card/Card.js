@@ -25,7 +25,7 @@ function MovieCard({movie}){
         <S.Wrapper>
             <div>
                 <S.Poster>
-                    <img src={movie.poster_path ? IMG_URL.current + movie.poster_path : ReplaceImage} />
+                    <img src={movie.poster_path ? IMG_URL.current + movie.poster_path : ReplaceImage} alt='image'/>
                 </S.Poster>
                 <S.DescBox>
                     <h1>{movie.title}</h1>

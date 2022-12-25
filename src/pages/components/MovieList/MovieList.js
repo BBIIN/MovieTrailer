@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { MovieApi } from "../../../apis/movieApi";
 import MovieListContent from "./Content/Content";
 import MovieListSidebar from "./Sidebar/Sidebar";
 import MovieListTitle from "./Title/Title";
