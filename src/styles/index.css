@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('../Fonts/ONE\ Mobile\ Title.ttf') format('woff');
+}
+@font-face {
+    font-family: 'ONE-Mobile-Title-bold';
+    src: url('../Fonts/ONE\ Mobile\ Bold.ttf') format('woff');
+}
+@font-face {
+    font-family: 'ONE-Mobile-Title-Light';
+    src: url('../Fonts/ONE\ Mobile\ Light.ttf') format('woff');
+}
+@font-face {
+    font-family: 'ONE-Mobile-Title-Regular';
+    src: url('../Fonts/ONE\ Mobile\ Regular.ttf') format('woff');
+}
