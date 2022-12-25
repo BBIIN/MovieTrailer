@@ -19,7 +19,7 @@ function MovieCard({movie}){
         }else {
             setMovieOverView(movieOverView)
         }
-    }, [movie])
+    }, [movieOverView])
 
     return(
         <S.Wrapper>

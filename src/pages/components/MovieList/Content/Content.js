@@ -19,7 +19,7 @@ function MovieListContent() {
         // isFetching : fetch 하는 중일때는 다음 페이지로 못 넘어가게 막음
         // 막지않으면 T / F  가 반복되어 요청이 많아지기 때문
         fetchNextPage()
-    }, [inView])
+    }, [inView,fetchNextPage,isFetching])
      
 
     return(
