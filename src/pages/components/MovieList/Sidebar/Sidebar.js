@@ -39,7 +39,7 @@ const List = styled.div`
         list-style: none;
         font-family: 'ONE-Mobile-Title';
     }
-    & a:visited{
+    & a,a:visited{
         color: ${({ theme }) => theme.palette.fontColor};
     }
 `;
