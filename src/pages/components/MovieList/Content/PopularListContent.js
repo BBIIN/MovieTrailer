@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import MovieCard from "../../../../components/card/Card";
 import { useInView } from 'react-intersection-observer';
-import usePopularMovieQureey from './../../../../qureis/useGetPopularMovie';
+import usePopularMovieQuery from "../../../../qureis/useGetPopularMovie";
 
-function MovieListContent() {
+function PopularMovieListContent() {
 
     // const [mocData] = useState([{},{},{},{},{},{},{}])
 
-    const {data: movieList, fetchNextPage, isFetching} = usePopularMovieQureey();
+    const {data: movieList, fetchNextPage, isFetching} = usePopularMovieQuery();
     const [ref, inView] = useInView();
     //  ref = useRef : html 요소 선택
     //  inView : 감지 됨에 따라 변화되는 옵션 값
@@ -20,7 +20,7 @@ function MovieListContent() {
         // 막지않으면 T / F  가 반복되어 요청이 많아지기 때문
         fetchNextPage()
     }, [inView,fetchNextPage,isFetching])
-     
+
 
     return(
         <S.Wrapper>
@@ -40,7 +40,7 @@ function MovieListContent() {
         </S.Wrapper>
     )
 }
-export default MovieListContent;
+export default PopularMovieListContent;
 
 const Wrapper = styled.div`
     min-height: 100vh;

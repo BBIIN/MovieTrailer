@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import '../../../../styles/index.css'
 
@@ -5,10 +6,10 @@ function MovieListSidebar() {
     return(
         <S.Wrapper>
             <S.List>
-                <li>HOME</li>
-                <li>POPULAR</li>
+                <li><S.link to={'/'}>HOME</S.link></li>
+                <li><S.link to={'/popular'}>POPULAR</S.link></li>
                 <li>NOW</li>
-                <li>UPCOMMING</li>
+                <li><S.link to={'/upcoming'}>UPCOMING</S.link></li>
             </S.List>
         </S.Wrapper>
     )
@@ -38,9 +39,17 @@ const List = styled.div`
         list-style: none;
         font-family: 'ONE-Mobile-Title';
     }
+    & a:visited{
+        color: ${({ theme }) => theme.palette.fontColor};
+    }
 `;
+
+const link = styled(Link)`
+    text-decoration: none;
+`
 
 const S = {
     Wrapper,
-    List
+    List,
+    link
 };

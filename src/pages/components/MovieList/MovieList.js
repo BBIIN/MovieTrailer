@@ -1,32 +1,25 @@
 import styled from "styled-components";
-import MovieListContent from "./Content/Content";
+import SubBanner from "../banner/subBanner";
+import PopularMovieListContent from "./Content/PopularListContent";
 import MovieListSidebar from "./Sidebar/Sidebar";
 import MovieListTitle from "./Title/Title";
 
-function MovieList(){
+function PopularMovieList(){
 
-    // const [movie, setMovieList] = useState([])
 
-    // useEffect(() => {
-    //     MovieApi.getPopluarMovies({ params: { page: 1, language: 'ko-KO'}})
-    //     .then((res) => {
-    //         setMovieList(res.data.results);
-    //     }).catch((err) => {
-    //         console.log(err)
-    //     })
-    // })
 
     return(
         <>
+        <SubBanner/>
             <MovieListTitle/>
             <S.Container>
                 <MovieListSidebar/>
-                <MovieListContent />
+                <PopularMovieListContent />
             </S.Container>
         </>
     )
 }
-export default MovieList;
+export default PopularMovieList;
 
 const Container = styled.div`
     display: flex;

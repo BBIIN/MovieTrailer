@@ -1,12 +1,12 @@
 import styled from "styled-components"
-import HomeBanner from "./components/banner/Banner"
-import MovieList from "./components/MovieList/MovieList"
+import HomeBanner from "./components/banner/MainBanner"
+import NowPlayingMovieList from "./components/MovieList/NowPlayList"
 
 function HomePage(){
     return(
         <S.Wrapper>
             <HomeBanner/>
-            <MovieList/>
+            <NowPlayingMovieList/>
         </S.Wrapper>
     )
 }

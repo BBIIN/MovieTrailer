@@ -1,4 +1,4 @@
-import Axios from "./@core"
+ import Axios from "./@core"
 
 const PATH = '/movie'
 
@@ -13,7 +13,7 @@ const MovieApi = {
         return Axios.get(PATH + '/now_playing', {params})
     },
     getUpcomingMovies({params}){
-        return Axios.get(PATH + '/upcomming', {params})
+        return Axios.get(PATH + '/upcoming', {params})
     },
     getTopRatedMovies({params}) {
         return Axios.get(PATH + '/top_rated', {params})

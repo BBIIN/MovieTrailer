@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     & > img {
         width: 100%;
         height: calc(100vh - 150px);
+        min-height: 350px;
         object-fit: cover;
     }
     & > div {
@@ -29,6 +30,7 @@ const Wrapper = styled.div`
         top: 0;
         left: 0;
         height: calc(100vh - 150px);
+        min-height: 350px;
         background-color: rgba(255, 255, 255, 0.2);
     }
 `

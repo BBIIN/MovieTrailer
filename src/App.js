@@ -1,21 +1,13 @@
 import { ThemeProvider } from 'styled-components';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import LayoutHeader from './components/layout/header/Header';
-import HomePage from './pages/Home';
 import GlobalStyles from './styles/global';
 import { theme } from './styles/theme';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import Routing from './routes/Routing';
 
 
 function App() {
-    // Axios.get('/movie/popular', {
-    //     params: {
-    //         language: 'ko-KO',
-    //         page: 2,
-    //     },
-    // }).then((res) => {
-    //     console.log(res);
-    // });
+
 
     const qureyClient = new QueryClient({
         defaultOptions:{
@@ -32,8 +24,7 @@ function App() {
             <ReactQueryDevtools initialIsOpen={true}/>
             <ThemeProvider theme={theme}>
                 <GlobalStyles />
-                <LayoutHeader />
-                <HomePage />
+                <Routing/>
             </ThemeProvider>
         </QueryClientProvider>
     );
