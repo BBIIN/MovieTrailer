@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import UpcomingListContent from "../MovieList/Content/UpcommingListContent";
 import MovieListSidebar from "../../../components/layout/sidebar/Sidebar";
-import SubBanner from "../banner/subBanner";
-import UpcomingListContent from "./Content/UpcommingListContent";
-import MovieListTitle from "../../../components/layout/Title/Title";
+import MovieListTitle from "../MovieList/Title/Title";
 
 function UpcommingMovieList(){
 
@@ -10,7 +9,6 @@ function UpcommingMovieList(){
 
     return(
         <>
-        <SubBanner/>
             <MovieListTitle/>
             <S.Container>
                 <MovieListSidebar/>

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import '../../../../styles/index.css'
+import '../../../styles/index.css'
 
 function MovieListSidebar() {
     return(

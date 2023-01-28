@@ -12,10 +12,11 @@ function UpcomingListContent() {
 
     useEffect(() => {
         console.log(inView)
+        console.log(isFetching)
         if(!inView || isFetching) return;   
         fetchNextPage()
     }, [inView,fetchNextPage,isFetching])
-     
+
 
     return(
         <S.Wrapper>

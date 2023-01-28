@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import SubBanner from "../banner/subBanner";
 import PopularMovieListContent from "./Content/PopularListContent";
-import MovieListSidebar from "./Sidebar/Sidebar";
-import MovieListTitle from "./Title/Title";
+import MovieListSidebar from "../../../components/layout/sidebar/Sidebar";
+import MovieListTitle from "../../../components/layout/Title/Title";
 
 function PopularMovieList(){
 

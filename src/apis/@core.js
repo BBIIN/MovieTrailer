@@ -6,5 +6,6 @@ const Axios = axios.create({
         api_key: process.env.REACT_APP_API_KEY,
     },
 });
-
 export default Axios;
+
+

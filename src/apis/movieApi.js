@@ -17,6 +17,6 @@ const MovieApi = {
     },
     getTopRatedMovies({params}) {
         return Axios.get(PATH + '/top_rated', {params})
-    }
+    },
 }
 export default MovieApi

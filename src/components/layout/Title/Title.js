@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { flexAlignCenter } from "../../../../styles/common";
-import '../../../../styles/index.css'
+import { flexAlignCenter } from "../../../styles/common";
+import '../../../styles/index.css'
 
 function MovieListTitle(){
 
