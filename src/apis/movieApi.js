@@ -18,5 +18,8 @@ const MovieApi = {
     getTopRatedMovies({params}) {
         return Axios.get(PATH + '/top_rated', {params})
     },
+    getMovieDetail(){
+        return Axios.get(PATH + '/{movie_id}')
+    }
 }
 export default MovieApi

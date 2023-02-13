@@ -14,7 +14,7 @@ function NowMovieListContent() {
     const {data: movieList, fetchNextPage, isFetching} = useNowPlayingMovieQuery();
     const [ref, inView] = useInView();
 
-    const [movie, setMovie] = useState()
+    const [movie, setMovie] = useState([])
 
     useEffect(() => {
         console.log(inView)
@@ -24,7 +24,7 @@ function NowMovieListContent() {
         fetchNextPage()
     }, [inView,fetchNextPage,isFetching])
 
-    //detail
+
 
     return(
         <S.Wrapper>
@@ -32,7 +32,7 @@ function NowMovieListContent() {
                 {movieList && movieList.pages.map((page, index) => (
                     <React.Fragment key={index}>
                         {page.data.results.map((movie, index) => (
-                            <MovieCard movie={movie} key={index}/>
+                            <Link key={movie.id} to={`/movie/${movie.id}`}><MovieCard movie={movie} key={index}/></Link>
                         ))}
                     </React.Fragment>
                 ))}
