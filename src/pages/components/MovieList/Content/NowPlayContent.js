@@ -3,9 +3,6 @@ import styled from "styled-components";
 import MovieCard from "../../../../components/card/Card";
 import { useInView } from 'react-intersection-observer';
 import useNowPlayingMovieQuery from './../../../../qureis/useGetNowPlaying';
-import axios from "axios";
-import qureyKey from "../../../../conts/qureyKey";
-import MovieApi from "../../../../apis/movieApi";
 import { Link } from "react-router-dom";
 
 function NowMovieListContent() {
@@ -14,7 +11,7 @@ function NowMovieListContent() {
     const {data: movieList, fetchNextPage, isFetching} = useNowPlayingMovieQuery();
     const [ref, inView] = useInView();
 
-    const [movie, setMovie] = useState([])
+    // const [movie, setMovie] = useState([])
 
     useEffect(() => {
         console.log(inView)
