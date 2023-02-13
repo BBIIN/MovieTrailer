@@ -1,7 +1,5 @@
-import MovieApi from "../../../../../apis/movieApi"
-import { useState } from 'react';
 
-function MovieView({movie}){
+function MovieView(){
 
     // const [view, setView] = useState('');
     
